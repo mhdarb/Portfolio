@@ -1,5 +1,7 @@
 import { useState } from "react";
+import arrow from "../../assets/arrow.png";
 import "./works.scss";
+
 
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -70,13 +72,13 @@ export default function Works() {
         ))}
       </div>
       <img
-        src="assets/arrow.png"
+        src={arrow}
         className="arrow left"
         alt=""
         onClick={() => handleClick("left")}
       />
       <img
-        src="assets/arrow.png"
+        src={arrow}
         className="arrow right"
         alt=""
         onClick={() => handleClick()}
