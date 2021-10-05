@@ -43,8 +43,8 @@
       transition: all 1s ease;
 
       @include mobile{
-        height: 180px;
-        margin: 10px 0;
+        height: 170px;
+        margin: 12px 0;
       }
 
       &.featured{
