@@ -1,7 +1,7 @@
 import { init } from 'ityped';
 import { useEffect, useRef } from "react";
 import down from "../../assets/down.png";
-import man from "../../assets/man.png";
+import profile from "../../assets/profile.png";
 import "./intro.scss";
 
 
@@ -19,7 +19,7 @@ export default function Intro() {
         <div className="intro" id="intro">
             <div className="left">
                 <div className="imgContainer">
-                    <img src={man} alt="" />
+                    <img src={profile} alt="" />
                 </div>
             </div>
             <div className="right">
