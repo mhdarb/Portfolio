@@ -94,6 +94,11 @@
                 animation: arrowBlink 2s infinite;
             }
 
+            @include mobile{
+                bottom: 20px;
+            }
+
+
             @keyframes arrowBlink {
                 50%{
                     opacity: 1;
