@@ -29,6 +29,10 @@ export default function PersonalInfo() {
                         <div class="col col-2" data-label="Value">Sunni/Sheikh</div>
                         </li>
                         <li class="table-row">
+                        <div class="col col-1" data-label="Attribute">Home</div>
+                        <div class="col col-2" data-label="Value">Delhi</div>
+                        </li>
+                        <li class="table-row">
                         <div class="col col-1" data-label="Attribute">Hometown</div>
                         <div class="col col-2" data-label="Value">Nagina/Aligarh (UP)</div>
                         </li>
