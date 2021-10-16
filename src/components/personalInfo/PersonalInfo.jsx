@@ -18,7 +18,7 @@ export default function PersonalInfo() {
                         </li>
                         <li class="table-row">
                         <div class="col col-1" data-label="Attribute">Height</div>
-                        <div class="col col-2" data-label="Value">5' 10</div>
+                        <div class="col col-2" data-label="Value">5' 10"</div>
                         </li>
                         <li class="table-row">
                         <div class="col col-1" data-label="Attribute">Complexion</div>

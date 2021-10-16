@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./app.scss";
-import AboutMe from "./components/aboutMe/AboutMe";
 import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
+import LookingFor from "./components/lookingFor/LookingFor";
 import Menu from "./components/menu/Menu";
 import Portfolio from "./components/portfolio/Portfolio";
 import Profession from "./components/profession/Profession";
@@ -25,7 +25,7 @@ function App() {
           <Testimonials/>
           <Profession/>
           <Contact/>
-          <AboutMe/>
+          <LookingFor/>
       </div>
     </div>
   );
