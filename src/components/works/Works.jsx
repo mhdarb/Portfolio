@@ -57,7 +57,7 @@ export default function Works() {
   };
   
   return (
-    <div className="works" id="works">
+    <div className="works" id="education">
       <h1>Academics</h1>     
       <div
         className="slider"

@@ -24,7 +24,7 @@ export default function Profession() {
                     <p>AVIZVA offers digital solutions, portal solutions, integration & e-commerce platform, and automating business platforms.</p>
                     <h2>CTC : 7 lpa</h2>
                 </div>
-                <div className="work">
+                <div className="work" id="profession">
                     <h3> Full Stack Development</h3>
                     <ul className="techlist">
                         <li >HTML</li>

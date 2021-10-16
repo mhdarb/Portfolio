@@ -3,7 +3,7 @@ import './lookingFor.scss';
 
 export default function LookingFor() {
     return (
-        <div className="lookingFor">
+        <div className="lookingFor" id="lookingFor">
             <h1>Looking For</h1>
             <div className="container">
                 <div className="left">
