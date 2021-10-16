@@ -24,8 +24,8 @@ function App() {
           <Works/>
           <Testimonials/>
           <Profession/>
-          <Contact/>
           <LookingFor/>
+          <Contact/>
       </div>
     </div>
   );

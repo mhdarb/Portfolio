@@ -6,9 +6,9 @@
     h1 {
         font-size: 60px;
         text-align: center;
-
+        
         @include mobile{
-          font-size: 25px;
+          font-size: 30px;
         }
       }
 
@@ -23,26 +23,56 @@
         
         .left{
             display: flex;
-            flex:8;
-            align-items: center;
-            justify-content: center;
-            img{
+            flex:6;
+            @include mobile{
+                flex: 8;
+            }
+            .bg{
+                display: flex;
+                height: 89%;
+                width: 100%;
+                padding-top: 55px;
+                margin: 0;
+                align-items:flex-start;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                clip-path: ellipse(25% 40% at 47% 52%);
+                background-color: crimson;
+                overflow-y: hidden;
+
                 @include mobile{
-                    height: 300px;
+                    height: 83%;
+                }
+                img{
+                    object-fit: cover;
+                    height: 500px;
+                    @include mobile{
+                        align-self: center;
+                        height: 270px;
+                    }
                 }
             }
         }
         .right{
             display: flex;
-            flex: 4;
+            flex: 6;
             align-items: center;
             justify-content: center;
-
+            @include mobile{
+                flex: 4;
+            }
             ul{
                 list-style-type: style;
                 padding: 25px;
                 box-shadow: 0px 0px 15px -8px black;
                 border-radius: 10px;
+                transition: all 1s ease;
+
+                &:hover{
+                    transform: scale(1.06);
+                }
 
                 @include mobile{
                     width: 80%;
@@ -50,7 +80,8 @@
                 }
                 li{
                     margin-top: 6px;
-                    
+                    font-weight: 500;
+                    letter-spacing: 0.02rem;
                     @include mobile{
                         font-size: 14px;
                     }

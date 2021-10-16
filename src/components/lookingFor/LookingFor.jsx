@@ -7,7 +7,9 @@ export default function LookingFor() {
             <h1>Looking For</h1>
             <div className="container">
                 <div className="left">
-                    <img src={girl} alt="" />
+                    <div className="bg">
+                        <img src={girl} alt="" />
+                    </div>
                 </div>
                 <div className="right">
                     <ul>
