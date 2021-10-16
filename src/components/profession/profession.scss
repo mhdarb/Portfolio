@@ -168,7 +168,7 @@
                     padding: 0;
 
                     @include mobile{
-                        display: inline;
+                        display: flex;
                         margin-top: 10px;
                         margin-left: 4px;
                         margin-right: 4px;
