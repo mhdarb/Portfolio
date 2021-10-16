@@ -34,8 +34,12 @@
             border-radius: 6px;
             cursor:pointer;
 
+            @include mobile{
+                padding: 5px 6px;
+                font-size: 13.5px;
+            }
+
             &.active{
-                padding: 5px;
                 background-color: $mainColor;
                 color: white;
             }
