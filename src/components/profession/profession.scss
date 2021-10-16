@@ -1,0 +1,198 @@
+@import "../../global.scss";
+
+.profession{
+    display: flex;
+
+    .left{
+        flex:5;
+
+        .bg{
+            clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+            background-color: crimson;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+
+            .link{
+                text-decoration: none;
+
+                h1{
+                    font-size: 70px;
+                    color: white;
+                    letter-spacing: 0.3rem;
+    
+                    @include mobile{
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            .location{
+                width: 70%;
+                display: flex;
+                position: absolute;
+                bottom: 20%;
+                color: white;
+
+                @include mobile{
+                    width: 80%;
+                    bottom: 15%;
+                }
+
+                i{
+                    margin-right: 7px;
+                    margin-top: 5px;
+                    font-size: 24px;
+    
+                    @include mobile{
+                        font-size: 18px;
+                    }
+                }
+    
+                p{
+                    width: 80%;
+                    line-height: 1.25;
+                    text-align: center;
+    
+                    @include mobile{
+                        line-height: normal;
+                        text-align: left;
+                        font-size: 14px;
+                    }
+                }  
+            }           
+        }
+    }
+    
+    .right{
+        flex: 7;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        h1{
+            top: 0;
+            position: absolute;
+            font-size: 60px;
+
+            @include mobile{
+                font-size: 30px;
+            }
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 50px;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px -8px black;
+            transition: all 1s ease;
+            height: 400px;
+            text-align: center;
+
+            @include mobile{
+                width: 88%;
+            }
+            
+            .title{
+                h2{
+                    font-size: 35px;
+
+                    @include mobile{
+                        font-size: 18px;
+                    }
+                }
+
+                span{
+                    font-size: 15px;
+                    color: #8c8c8c;
+                    @include mobile{
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .AboutCompany{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                width: 80%;
+
+                @include mobile{
+                    width: 90%;
+                }
+                p{
+                    text-align: center;
+                    line-height: 1.25;
+                    @include mobile{
+                        font-size: 13px;
+                    }
+                }
+
+                h2{
+                    background-color: rgb(236, 230, 231);
+                    padding: 4px 8px;
+                    border-radius: 7px; 
+                    margin-top: 10px;
+                    font-size: 27px;
+
+                    @include mobile{
+                        font-size: 17px;
+                    }
+                }
+            }
+
+            .work{
+                 width: 100%;
+                 h3{
+                    @include mobile{
+                        font-size: 15px;
+                    }
+                 }
+                ul{
+                    margin-top: 15px;
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    padding: 0;
+
+                    @include mobile{
+                        margin-top: 10px;
+                    }
+
+                    li{
+                        background-color: #15023a;
+                        color: white;
+                        padding: 7px 8px;
+                        font-size: 14px;
+                        border-radius: 6px;
+                        cursor: pointer;
+                        transition:all 1s ease-in;
+                        &:hover{
+                            color: #15023a;
+                            background-color: white;
+                        }
+
+                        @include mobile{
+                            font-size: 10px;
+                            padding: 4px 5px;
+                            border-radius: 4px;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

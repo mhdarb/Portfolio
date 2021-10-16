@@ -3,36 +3,50 @@ import arrow from "../../assets/arrow.png";
 import "./works.scss";
 
 
+
+
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const data = [
     {
       id: "1",
-      icon: "./assets/mobile.png",
-      title: "Web Design",
-      desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      img:
-        "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+      icon: "fas fa-school",
+      title: "High School",
+      course: "General Studies",
+      year: "2014",
+      name:
+        "The Frank Anthony Public School",
+      location:
+        "Lajpat Nagar, New Delhi",
+      board:
+          "ICSE BOARD",
     },
     {
       id: "2",
-      icon: "./assets/globe.png",
-      title: "Mobile Application",
-      desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+      icon: "fas fa-school",
+      title: "Senior Secondary School",
+      course: "Science Stream",
+      year: "2016",
+      name:
+        "Apeejay School",
+      location:
+        "Sheikh Sarai, New Delhi",
+      board:
+          "CBSE BOARD",
     },
     {
       id: "3",
-      icon: "./assets/writing.png",
-      title: "Branding",
-      desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+      icon: "fas fa-graduation-cap",
+      title: "Graduation",
+      year:"2017-2021",
+      course: "B.Tech in Computer Science",
+      name:
+        "Jamia Millia Islamia",
+      location:
+        "Jamia Nagar, New Delhi",
+      board:
+          "CENTRAL UNIVERSITY",
     },
   ];
 
@@ -44,13 +58,26 @@ export default function Works() {
   
   return (
     <div className="works" id="works">
+      <h1>Academics</h1>     
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         {data.map((d) => (
           <div className="container">
-            <div className="item">
+              <div class="item">
+                        <i class={d.icon} id="icon"></i>
+                        <h2>{d.title}</h2>
+                        <h4>{d.course}</h4>
+                        <h5>{d.year}</h5>
+                        <h2>{d.name}</h2>
+                        <div class="location">
+                          <i class="fas fa-map-marker-alt"></i>
+                            <span>{d.location}</span>
+                        </div>
+                        <span>{d.board}</span>
+              </div>
+            {/* <div className="item">
               <div className="left">
                 <div className="leftContainer">
                   <div className="imgContainer">
@@ -67,7 +94,7 @@ export default function Works() {
                   alt=""
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>

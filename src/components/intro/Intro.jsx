@@ -12,7 +12,7 @@ export default function Intro() {
              backDelay: 1500,
              backSpeed: 60,
              showCursor:true,
-             strings: ['Developer', 'Designer', 'Content Creator' ],
+             strings: ['Muslim', 'Sunni', 'Sheikh' ],
         });
     }, [])
     return (
@@ -26,7 +26,7 @@ export default function Intro() {
                 <div className="wrapper">
                     <h2>Hi There, I'm</h2>
                     <h1>Mohd Areeb</h1>
-                    <h3>Freelance <span ref={textRef}></span></h3>
+                    <h3><span ref={textRef}></span></h3>
                 </div>
                 <a href="#portfolio">
                     <img src={down} alt=""/>

@@ -186,3 +186,36 @@ export const featuredPortfolio = [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
     },
   ];
+
+  export const familyData = [
+    {
+      relation:"Father",
+      name:"Dr. Mohd Javed Qamar",
+      profession:"Deputy Director Of Education Delhi Govt.",
+      education:"Phd Jamia Millia Islamia",
+    },
+    {
+      relation:"Mother",
+      name:"Shahina Javed",
+      profession:"HomeMaker",
+      education:"B.A Physocology AMU",
+    },
+    {
+      relation:"Elder Brother",
+      name:"Mohd Talha Javed",
+      profession:"Thermal & Fluid Sc. Engineer, Cummins",
+      education:"M.Tech in Mechanical AMU",
+    },
+    {
+      relation:"Sister-In-Law",
+      name:"Ayesha",
+      profession:"HomeMaker",
+      education:"B.Com DU",
+    },
+    {
+      relation:"Younger Sister",
+      name:"Madiha Javed",
+      profession:"Student",
+      education:"D.Eled 2nd Yr, IP",
+    },
+  ]

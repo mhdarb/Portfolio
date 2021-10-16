@@ -1,24 +1,29 @@
 import { useEffect, useState } from "react";
-import { contentPortfolio, designPortfolio, featuredPortfolio, mobilePortfolio, webPortfolio } from "../../data";
+import AboutMe from "../aboutMe/AboutMe";
+import Family from "../family/Family";
+import New from "../new/New";
+import PersonalInfo from "../personalInfo/PersonalInfo";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
 
+
 export default function Portfolio() {
-    const [selected, setSelected] = useState("featured");
-    const [data, setData] = useState([]);
+    const [selected, setSelected] = useState("PersonalInfo");
+    //const [data, setData] = useState([]);
+    const[component,setComponent]=useState([]);
 
     const list = [
         {
-          id: "featured",
-          title: "Featured",
+          id: "personalInfo",
+          title: "Personal Info",
         },
         {
-          id: "web",
-          title: "Web App",
+          id: "aboutMe",
+          title: "About Me",
         },
         {
-          id: "mobile",
-          title: "Mobile App",
+          id: "family",
+          title: "Family",
         },
         {
           id: "design",
@@ -29,26 +34,28 @@ export default function Portfolio() {
           title: "Content",
         },
       ];
-    
     useEffect(() => {
         switch (selected) {
-            case "featured":
-              setData(featuredPortfolio);
+            case "PersonalInfo":
+              setComponent("PersonalInfo");
               break;
-            case "web":
-              setData(webPortfolio);
+            case "aboutMe":
+              setComponent("AboutMe");
               break;
-            case "mobile":
-              setData(mobilePortfolio);
+            case "family":
+              setComponent("Family");
               break;
-            case "design":
-              setData(designPortfolio);
-              break;
-            case "content":
-              setData(contentPortfolio);
-              break;
+            // case "mobile":
+            //   setComponent(mobilePortfolio);
+            //   break;
+            // case "design":
+            //   setComponent(designPortfolio);
+            //   break;
+            // case "content":
+            //   setComponent(contentPortfolio);
+            //   break;
             default:
-              setData(featuredPortfolio);
+              setComponent("PersonalInfo");
           }
         }, [selected]);
     return (
@@ -64,7 +71,7 @@ export default function Portfolio() {
                 ))}
             </ul>
             <div className="container">
-                {data.map((d) =>(
+                {/* {data.map((d) =>(
                     <div className="item">
                      <img 
                         src={d.img}
@@ -72,7 +79,11 @@ export default function Portfolio() {
                      />
                      <h3>{d.title}</h3>
                     </div>
-                ))}
+                ))} */}
+                
+                {component==="PersonalInfo"?<PersonalInfo/>:<New/>}
+                {component==="Family"?<Family/>:<New/>}
+                {component==="AboutMe"?<AboutMe/>:<New/>}
             </div>
         </div>
     );

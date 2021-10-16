@@ -1,9 +1,11 @@
 import { useState } from "react";
 import "./app.scss";
+import AboutMe from "./components/aboutMe/AboutMe";
 import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
 import Menu from "./components/menu/Menu";
 import Portfolio from "./components/portfolio/Portfolio";
+import Profession from "./components/profession/Profession";
 import Testimonials from "./components/testimonials/Testimonials";
 import Topbar from "./components/topbar/Topbar";
 import Works from "./components/works/Works";
@@ -21,7 +23,9 @@ function App() {
           <Portfolio/>
           <Works/>
           <Testimonials/>
+          <Profession/>
           <Contact/>
+          <AboutMe/>
       </div>
     </div>
   );
