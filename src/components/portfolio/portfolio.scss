@@ -35,6 +35,7 @@
             cursor:pointer;
 
             &.active{
+                padding: 6px;
                 background-color: $mainColor;
                 color: white;
             }

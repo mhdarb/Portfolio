@@ -7,17 +7,20 @@
   justify-content: center;
   position: relative;
 
+  @include mobile{
+    overflow: hidden;
+  }
+
   h1{
     position: absolute;
-    font-size: 50px;
-    top: 0;
+    font-size: 60px;
+    top: 15px;
     color: white;
-    letter-spacing: 0.1rem;
 
     @include mobile{
       position: absolute;
-      font-size: 20px;
-      top: 0;
+      font-size: 30px;
+      top: 0px;
     }
   }
   .arrow {
@@ -48,6 +51,7 @@
 
     @include mobile {
       height: 100vh;
+      margin-top: 6px;
       flex-direction: column;
       justify-content: center;
     }

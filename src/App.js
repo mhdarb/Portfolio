@@ -6,7 +6,6 @@ import LookingFor from "./components/lookingFor/LookingFor";
 import Menu from "./components/menu/Menu";
 import Portfolio from "./components/portfolio/Portfolio";
 import Profession from "./components/profession/Profession";
-import Testimonials from "./components/testimonials/Testimonials";
 import Topbar from "./components/topbar/Topbar";
 import Works from "./components/works/Works";
 
@@ -22,7 +21,7 @@ function App() {
           <Intro/>
           <Portfolio/>
           <Works/>
-          <Testimonials/>
+          {/* <Testimonials/> */}
           <Profession/>
           <LookingFor/>
           <Contact/>
