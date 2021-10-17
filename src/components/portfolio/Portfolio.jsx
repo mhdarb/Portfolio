@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import AboutMe from "../aboutMe/AboutMe";
 import Family from "../family/Family";
+import Hobbies from "../hobbies/Hobbies";
 import New from "../new/New";
 import PersonalInfo from "../personalInfo/PersonalInfo";
 import PortfolioList from "../portfolioList/PortfolioList";
+import Routine from "../routine/Routine";
 import "./portfolio.scss";
 
-
 export default function Portfolio() {
-    const [selected, setSelected] = useState("PersonalInfo");
+    const [selected, setSelected] = useState("personalInfo");
     //const [data, setData] = useState([]);
     const[component,setComponent]=useState([]);
 
@@ -26,12 +27,12 @@ export default function Portfolio() {
           title: "Family",
         },
         {
-          id: "design",
-          title: "Design",
+          id: "hobbies",
+          title: "Hobbies",
         },
         {
-          id: "content",
-          title: "Content",
+          id: "routine",
+          title: "Routine",
         },
       ];
     useEffect(() => {
@@ -45,12 +46,12 @@ export default function Portfolio() {
             case "family":
               setComponent("Family");
               break;
-            // case "mobile":
-            //   setComponent(mobilePortfolio);
-            //   break;
-            // case "design":
-            //   setComponent(designPortfolio);
-            //   break;
+            case "hobbies":
+              setComponent("Hobbies");
+              break;
+            case "routine":
+              setComponent("Routine");
+              break;
             // case "content":
             //   setComponent(contentPortfolio);
             //   break;
@@ -60,7 +61,7 @@ export default function Portfolio() {
         }, [selected]);
     return (
         <div className="portfolio" id="portfolio">
-            <h1>Portfolio</h1>
+            <h1>Profile</h1>
             <ul>
                 {list.map((item) =>(
                         <PortfolioList title={item.title} 
@@ -84,6 +85,9 @@ export default function Portfolio() {
                 {component==="PersonalInfo"?<PersonalInfo/>:<New/>}
                 {component==="Family"?<Family/>:<New/>}
                 {component==="AboutMe"?<AboutMe/>:<New/>}
+                {component==="Hobbies"?<Hobbies/>:<New/>}
+                {component==="Routine"?<Routine/>:<New/>}
+
             </div>
         </div>
     );
