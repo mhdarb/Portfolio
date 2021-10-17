@@ -8,6 +8,14 @@ export default function Hobbies() {
                     <SportsCricket className="icon"/>
                     <h3>Cricket</h3>
                 </div>
+                <div className="hobby">
+                    <SportsCricket className="icon"/>
+                    <h3>Gym</h3>
+                </div>
+                <div className="hobby">
+                    <SportsCricket className="icon"/>
+                    <h3>Travelling</h3>
+                </div>
             </div>
         </div>
     )

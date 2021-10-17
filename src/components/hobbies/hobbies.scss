@@ -6,7 +6,6 @@
 
 .container{
     display: flex;
-    background-color: aliceblue;
     padding-top:15px;
     align-items: center;
     flex-direction: column;
@@ -14,18 +13,20 @@
 
 
     .hobby{
-        padding: 12px 18px;
+        padding: 10px 15px;
         display: flex;
-        width: 70%;
-        justify-content: space-evenly;
+        width: 40%;
+        justify-content:flex-start;
         align-items: center;
-        background-color:lightgrey;
+        background-color:rgb(228, 188, 188);
         margin-bottom: 10px;
         border-radius: 8px;
     }
 
     .icon{
         padding: 10px;
+        margin-left: 20px;
+        margin-right: 380px;
         border-radius: 50%;
         background-color:lightgoldenrodyellow;
     }
