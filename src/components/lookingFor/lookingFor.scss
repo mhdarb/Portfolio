@@ -16,9 +16,10 @@
         display: flex;
         justify-content: center;
         height: 90%;
-
+        margin-top: 10px;
         @include mobile{
             flex-direction: column;
+            margin-top: 7px;
         }
         
         .left{
@@ -31,14 +32,13 @@
                 display: flex;
                 height: 89%;
                 width: 100%;
-                padding-top: 55px;
                 margin: 0;
                 align-items:flex-start;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 position: relative;
-                clip-path: ellipse(25% 40% at 47% 52%);
+                clip-path: ellipse(25% 48% at 50% 49%);
                 background-color: crimson;
                 overflow-y: hidden;
 
@@ -50,7 +50,7 @@
                     height: 500px;
                     @include mobile{
                         align-self: center;
-                        height: 270px;
+                        height: 260px;
                     }
                 }
             }
@@ -69,21 +69,19 @@
                 box-shadow: 0px 0px 15px -8px black;
                 border-radius: 10px;
                 transition: all 1s ease;
-
+                font-family: 'Roboto',sans-serif;
                 &:hover{
                     transform: scale(1.06);
                 }
 
                 @include mobile{
-                    width: 80%;
-                    padding: 12px;
+                    width: 85%;
+                    padding: 10px;
                 }
                 li{
                     margin-top: 6px;
-                    font-weight: 500;
-                    letter-spacing: 0.02rem;
                     @include mobile{
-                        font-size: 14px;
+                        font-size: 13px;
                     }
                 }
             }
