@@ -6,7 +6,7 @@ export default function aboutMe() {
             <div className="aboutMeContainer">
                 <img src={man} alt="" />
                 <p>I am a simple, humble and practicing muslim belonging from a middle class family that holds Islamic mindset and values.
-                    Alhamdulillah I have the abilty to distinguish between right and wrong as per Islamic laws.<br/>
+                    Alhamdulillah I have the abilty to distinguish between halal and haram as per Islamic laws.<br/>
                     &nbsp;&nbsp;As a person I am sincere and hardworking in achieving my life goals (All Praise due to Allah SWT).
                     I am social and actively participates in having a cheerful conversation with people.<br/>
                     &nbsp;I refrain from materialism and following non Islamic norms and trends followed in
