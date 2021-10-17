@@ -13,12 +13,12 @@ export default function LookingFor() {
                 </div>
                 <div className="right">
                     <ul>
-                        <li>A simple practicing muslim girl with Islamic mindset</li>
-                        <li>Younger than me</li>
-                        <li>Good looking</li>
-                        <li>Decent Education background</li>
-                        <li>Currently graduating or graduated this year</li>
-                        <li>Not Working</li>
+                        <li>A simple practicing muslim girl with Islamic mindset.</li>
+                        <li>Younger than me.</li>
+                        <li>Good looking.</li>
+                        <li>Decent Education background.</li>
+                        <li>Currently graduating or graduated this year.</li>
+                        <li>Not Working.</li>
                     </ul>                  
                 </div>
             </div>
