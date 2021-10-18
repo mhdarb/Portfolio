@@ -1,4 +1,5 @@
-import { Explore, FitnessCenter, SportsCricket } from "@material-ui/icons";
+import { FitnessCenter, SportsCricket } from "@material-ui/icons";
+import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import './hobbies.scss';
 export default function Hobbies() {
     return (
@@ -13,7 +14,7 @@ export default function Hobbies() {
                     <h3>Gym</h3>
                 </div>
                 <div className="hobby">
-                    <Explore className="icon"/>
+                    <TravelExploreIcon className="icon"/>
                     <h3>Travelling</h3>
                 </div>
             </div>
