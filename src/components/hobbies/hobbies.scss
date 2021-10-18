@@ -15,7 +15,7 @@
 
 
     .hobby{
-        padding: 10px 15px;
+        padding: 8px 12px;
         display: flex;
         width: 40%;
         align-items: center;
@@ -32,11 +32,12 @@
 
     h3{
         margin-left: 250px;
+        font-weight: 500;
+        font-size: 16px;
         @include mobile{
             margin-left: 120px;
             font-size: 14px;
             letter-spacing: 0.02rem;
-            font-weight: 500;
         }
     }
 
