@@ -26,19 +26,18 @@
             display: flex;
             flex:6;
             @include mobile{
-                flex: 8;
+                flex: 7;
             }
             .bg{
                 display: flex;
                 height: 89%;
                 width: 100%;
                 margin: 0;
-                align-items:flex-start;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 position: relative;
-                clip-path: ellipse(25% 48% at 50% 49%);
+                clip-path: ellipse(25% 47% at 50% 49%);
                 background-color: crimson;
                 overflow-y: hidden;
 
@@ -50,7 +49,7 @@
                     height: 500px;
                     @include mobile{
                         align-self: center;
-                        height: 260px;
+                        height: 230px;
                     }
                 }
             }
@@ -61,7 +60,7 @@
             align-items: center;
             justify-content: center;
             @include mobile{
-                flex: 4;
+                flex: 5;
             }
             ul{
                 list-style: circle;
@@ -69,7 +68,8 @@
                 box-shadow: 0px 0px 15px -8px black;
                 border-radius: 10px;
                 transition: all 1s ease;
-                font-family: 'Roboto',sans-serif;
+                // font-family: 'Roboto',sans-serif;
+                // background-color: #ffffe6;
                 &:hover{
                     transform: scale(1.06);
                 }
