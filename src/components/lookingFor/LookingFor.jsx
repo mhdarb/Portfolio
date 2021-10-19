@@ -18,6 +18,7 @@ export default function LookingFor() {
                         <li>Good looking.</li>
                         <li>Decent Education background.</li>
                         <li>Currently graduating or graduated this year.</li>
+                        <li>Belongs from Delhi or Uttar Pradesh.</li>
                         <li>Not Working.</li>
                     </ul>                  
                 </div>
