@@ -26,7 +26,12 @@
             }
 
             img{
-                height: 60%;
+                height: 90%;
+                object-fit: cover;
+                border-radius: 12%;
+                @include mobile{
+                    height: 57%;
+                }
             }
         }
     }
